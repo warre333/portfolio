@@ -17,11 +17,81 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  background: #252526;
+  color: #ffffff;
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+
+#jstext {  
+  background-image: linear-gradient(to right, #f7df1e, #a79317); -webkit-background-clip: text; 
+  color: transparent;
+  
+  animation-duration: 1.5s;
+  animation-name: colorWave;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorWave {
+  0% {
+    background-image: linear-gradient(to right, #a79317, #d4bf19, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #d4bf19 ); 
+  }
+  10% {
+    background-image: linear-gradient(to right, #d4bf19, #a79317, #d4bf19, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e ); 
+  }
+  20% {
+    background-image: linear-gradient(to right, #f7df1e, #d4bf19, #a79317, #d4bf19, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e ); 
+  }
+  30% {
+    background-image: linear-gradient(to right, #f7df1e, #f7df1e, #d4bf19, #a79317, #d4bf19, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e ); 
+  }
+  40% {
+    background-image: linear-gradient(to right, #f7df1e, #f7df1e, #f7df1e, #d4bf19, #a79317, #d4bf19, #f7df1e, #f7df1e, #f7df1e, #f7df1e ); 
+  }
+  50% {
+    background-image: linear-gradient(to right, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #d4bf19, #a79317, #d4bf19, #f7df1e, #f7df1e, #f7df1e ); 
+  }
+  60% {
+    background-image: linear-gradient(to right, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #d4bf19, #a79317, #d4bf19, #f7df1e, #f7df1e ); 
+  }
+  70% {
+    background-image: linear-gradient(to right, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #d4bf19, #a79317, #d4bf19, #f7df1e ); 
+  }
+  80% {
+    background-image: linear-gradient(to right, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #d4bf19, #a79317, #d4bf19 ); 
+  }
+  90% {
+    background-image: linear-gradient(to right, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #d4bf19, #a79317 ); 
+  }
+  100% {
+    background-image: linear-gradient(to right, #a79317, #d4bf19, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #f7df1e, #d4bf19 ); 
+  }
+}
+
+#projectsButton {    
+  animation-duration: 1.5s;
+  animation-name: shake;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    rotate: 0deg;
+  } 
+  50% {
+    rotate: 1deg;
+  } 
 }

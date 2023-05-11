@@ -7,7 +7,7 @@ import { age, studySubject, studyYear, studyingAt } from '@/config/personal.conf
 const spaceMono = Space_Mono({ weight: "400", subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Portfolio - Warre Bossaert',
+  title: 'Projects - Warre Bossaert',
   description: `Warre Bossaert is a ${age} year old student, studying ${studySubject} @ ${studyingAt} (${studyYear} year). This website was made to showcase previous work.`,
 }
 
